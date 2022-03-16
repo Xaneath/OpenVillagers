@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#fb6605">
+	<meta name="apple-mobile-web-app-title" content="Virtual Villagers">
+	<meta name="application-name" content="Virtual Villagers">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#fb6605">
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="SqTUgP5IGMuCimNNIm174CPI-yHzWK_eIdXHnURjH1k">
+
+	<title>Virtual Villagers</title>
+
+	<!--base href="http://www.virtualvillagers.com/"-->
+
+	<link rel="stylesheet" href="/lib/w3pro.css">
+	<link rel="stylesheet" href="/lib/LDW.css">
+</head>
+
+<body>
+	<header class="w3-top">
+		<nav class="w3-bar w3-theme">
+			<div class="w3-dropdown-hover">
+				<button class="w3-button w3-theme">Games</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="/virtual_villagers_5.html" class="w3-bar-item w3-button">Virtual Villagers 5: New
+						Believers</a>
+					<a href="/virtual_villagers_4.html" class="w3-bar-item w3-button">Virtual Villagers 4: The Tree of
+						Life</a>
+					<a href="/virtual_villagers_3.html" class="w3-bar-item w3-button">Virtual Villagers 3: The Secret
+						City</a>
+					<a href="/virtual_villagers_2.html" class="w3-bar-item w3-button">Virtual Villagers 2: The Lost
+						Children</a>
+					<a href="/virtual_villagers_1.html" class="w3-bar-item w3-button">Virtual Villagers: A New Home</a>
+				</div>
+			</div>
+			<a href="/news.html" class="w3-bar-item w3-button">News</a>
+		</nav>
+	</header>
+	<section class="w3-container w3-theme-l5">
+		<h2 class="w3-padding-top-48">Virtual Villagers 5: New Believers</h2>
+		<p>Everything you know about Virtual Villagers has changed! Explore the center of Isola in this innovative new
+			chapter in the Virtual Villagers series, while you reckon with a band of mysterious masked heathens, who do
+			not believe in you! Guide your tribe as they attempt to convert the savages, by dismantling their precious
+			totems and removing their scary masks! <strong>Make them believe!</strong></p>
+		<ul>
+			<li>Visit the center of the Island of Isola.</li>
+			<li>Masked heathens that need to be shown the light.</li>
+			<li>Mysterious heathen Totems to be dismantled.</li>
+			<li>Many God Powers to impress your villagers and the heathens!</li>
+			<li>New puzzles, new collectibles, new Island Events!</li>
+			<li>Dozens of achievements for players to accomplish.</li>
+			<li>Real-time weather! Clouds, fog, and sudden downpours</li>
+			<li>Real-time gameplay: new surprises every time you turn the game on!</li>
+		</ul>
+		<h5>Special bonus: order from this website and get the official game guide!</h5>
+
+	</section>
+	<aside class="w3-container w3-card w3-theme-l4 w3-round w3-right">
+		<div class="w3-bar w3-theme-l3">
+			<button class="w3-bar-item w3-button w3-hover-theme" onclick="switchPlatform('PC')">PC</button>
+			<button class="w3-bar-item w3-button w3-hover-theme" onclick="switchPlatform('Mac')">Mac</button>
+		</div>
+		<div id="PC" class="platform">
+			<h2>PC</h2>
+			<a href="http://c2989772.cdn.cloudfiles.rackspacecloud.com/VV5_Setup.exe" class="w3-button">Try It</a>
+		</div>
+
+		<div id="Mac" class="platform" style="display:none">
+			<h2>Mac</h2>
+			<p>Download the game for Mac!</p>
+		</div>
+	</aside>
+	<script>
+		function switchPlatform(platform) {
+			var i;
+			var x = document.getElementsByClassName("platform");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			document.getElementById(platform).style.display = "block";
+		}
+	</script>
+</body>
