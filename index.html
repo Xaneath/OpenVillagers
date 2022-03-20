@@ -14,30 +14,17 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#fb6605">
 
-	
+
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="google-site-verification" content="SqTUgP5IGMuCimNNIm174CPI-yHzWK_eIdXHnURjH1k">
 
 	<title>Virtual Villagers</title>
 
-	
+
 
 	<link rel="stylesheet" href="lib/w3pro.css">
 	<link rel="stylesheet" href="lib/LDW.css">
-
-
-	<meta
-		content="Official Site of Virtual Villagers by Last Day of Work. Includes exclusive free downloads, help, walkthrough, hints, tips, and free strategy guides."
-		name="description">
-
-	<meta
-		content="virtual villagers, virtual villagers 4 the tree of life, virtual villagers a new home, virtual villagers 2 the lost children, virtual villagers 3 the secret city, download virtual villagers, sim, sims, games, download games, online games, free games, play games, pc games, mac games, last day of work, ldw"
-		name="keywords">
-
-
-	<script type="text/javascript" async=""
-		src="./Virtual Villagers® - Official Site - by Last Day of Work. Download Free Game Trial._files/ga.js"></script>
 </head>
 
 <body>
@@ -61,22 +48,33 @@
 		</nav>
 	</header>
 
+	<div class="w3-content w3-display-container">
+		<div class="slides">
+			<h1>Last Day of Work</h1>
+		</div>
+		<div class="slides">
+			<h1>Last Day of Work</h1>
+		</div>
+		<div class="slides">
+			<h1>Last Day of Work</h1>
+		</div>
+		<div class="slides">
+			<h1>Last Day of Work</h1>
+		</div>
+		<div class="w3-center w3-display-bottommiddle" style="width:100%">
+			<div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+			<div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+			<span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+			<span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+			<span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+		</div>
+	</div>
+
 	<div id="featurewrapper">
 		<div id="bread">
 			<p>Home</p>
 
 		</div>
-
-
-		<div id="scroller">
-			<ruffle-object data="scroller.swf" type="application/x-shockwave-flash" width="670" height="250">
-				<param name="MOVIE" value="scroller.swf">
-				<param name="wmode" value="transparent">
-			</ruffle-object>
-
-		</div>
-
-
 
 
 		<div id="topfive">
@@ -300,7 +298,25 @@
 		</div>
 	</div>
 
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
 
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			if (n > x.length) { slideIndex = 1 }
+			if (n < 1) { slideIndex = x.length };
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
+		}
+	</script>
 
 </body>
 
